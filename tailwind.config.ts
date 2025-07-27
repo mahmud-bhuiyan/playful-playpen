@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'heading': ['Comic Neue', 'cursive'],
+				'body': ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +30,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -42,7 +47,11 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					foreground: 'hsl(var(--accent-foreground))',
+					yellow: 'hsl(var(--accent-yellow))',
+					'yellow-foreground': 'hsl(var(--accent-yellow-foreground))',
+					green: 'hsl(var(--accent-green))',
+					'green-foreground': 'hsl(var(--accent-green-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -50,7 +59,18 @@ export default {
 				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					foreground: 'hsl(var(--card-foreground))',
+					hover: 'hsl(var(--card-hover))'
+				},
+				boys: {
+					DEFAULT: 'hsl(var(--boys-primary))',
+					foreground: 'hsl(var(--boys-primary-foreground))',
+					glow: 'hsl(var(--boys-glow))'
+				},
+				girls: {
+					DEFAULT: 'hsl(var(--girls-primary))',
+					foreground: 'hsl(var(--girls-primary-foreground))',
+					glow: 'hsl(var(--girls-glow))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -62,6 +82,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-boys': 'var(--gradient-boys)',
+				'gradient-girls': 'var(--gradient-girls)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-subtle': 'var(--gradient-subtle)'
+			},
+			boxShadow: {
+				'toy': 'var(--shadow-toy)',
+				'boys': 'var(--shadow-boys)',
+				'girls': 'var(--shadow-girls)',
+				'glow': 'var(--shadow-glow)'
+			},
+			transitionTimingFunction: {
+				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
